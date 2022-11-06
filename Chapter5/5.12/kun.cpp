@@ -7,12 +7,12 @@ int main() {
 	string str, pstr = nullptr;
 	size_t i = 0;
 	char *pchr;
-	while (cin >> string) {
-		*pchr = &string[i];
+	while (cin >> str) {
+		pchr = &str[i];
 		if (*pchr == 'f')
 			switch (++*pchr) {
 				case 'f':
-					++ffcnt;
+					++ffCnt;
 					break;
 				case 'l':
 					++flCnt;
