@@ -25,23 +25,23 @@ std::vector<int> addVec(const std::vector<int> &a, const std::vector<int> &b) {
     return result;
 }
  */
-/* void reverseVec(std::vector<int> &a) {
+void reverseVec(std::vector<int> &a) {
     // auto mid = a.begin() + ((a.end() - a.begin()) >> 1);
     // std::vector<int>::iterator mid = (a.end() - a.begin()) / 2;
     // std::cout << a[*mid] << std::endl;;
-/*     for (auto i = a.begin(), j = a.end() - 1; i < j; ++i) {
+    for (auto i = a.begin(), j = a.end() - 1; i < j; ++i) {
         std::cout << *i << *j << std::endl;
         int temp = a[*i];
         a[*i] = a[*j];
         a[*j] = temp;
     }
-    while ((a.begin() != a.end()) && (a.begin() != --a.end()))
+/*     while ((a.begin() != a.end()) && (a.begin() != --a.end()))
     {
         std::iter_swap(a.begin(), a.end());
         ++a.begin();
-    }
+    } */
     
-} */
+}
 
 std::vector<int> addVec(std::vector<int> &a, std::vector<int> &b) {
     if (a.empty() && !b.empty())
