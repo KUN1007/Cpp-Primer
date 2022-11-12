@@ -4,11 +4,10 @@
 void reverseVec(std::vector<int> &a) {
     auto beg = a.begin();
     auto end = a.end();
-    auto mid = beg + ((end - beg) >> 1);
-    for (auto i = beg; i != mid; i++) {
-        int temp = *i;
-        *i = *(beg + (end - i) - 1);
-        *(beg + (end - i) - 1) = temp;
+    for (; beg < end - 1; ++beg, --end) {
+        int temp = *beg;
+        *beg = *(beg + (end - beg) - 1);
+        *(beg + (end - beg) - 1) = temp;
     }
 }
 
