@@ -23,7 +23,7 @@ int dis(int a, int b) {
 }
 
 void printVec(int a, int b, int (*p)(int, int)) {
-    std::cout << p(a, b) << std::endl;
+    std::cout << p(a, b) << '\n';
 }
 
 int main() {
