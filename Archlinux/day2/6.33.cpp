@@ -5,7 +5,7 @@ void printVector(std::vector<int> vec, size_t index);
 void print(std::vector<int> vec, unsigned index);
 
 int main() {
-    std::vector kun{ 7, 10, 1007 };
+    std::vector<int> kun{ 7, 10, 1007 };
     printVector(kun, kun.size());
     std::cout << "------------------" << std::endl;
     print(kun, 0);
