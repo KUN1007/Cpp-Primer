@@ -68,7 +68,9 @@
     "thread": "cpp",
     "cinttypes": "cpp",
     "typeinfo": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "forward_list": "cpp",
+    "cfenv": "cpp"
   },
   "cSpell.words": ["Archlinux", "azkhx", "yuyu"]
 }
