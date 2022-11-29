@@ -12,7 +12,7 @@ void reverseVec(std::vector<int> &a) {
 }
 
 int main() {
-    std::vector<int> kun{1, 2, 3, 4, 5};
+    std::vector<int> kun{1, 2, 3, 4, 5 };
 
     for (decltype(kun.begin()) i = kun.begin(); i != kun.end(); ++i) {
         std::cout << "iterator: " << *i << '\n';
