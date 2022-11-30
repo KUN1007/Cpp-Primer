@@ -23,6 +23,27 @@ void kun() {
     }
 }
 
+class Solution {
+public:
+    std::vector<int> sortedSquares(std::vector<int>& nums) {
+        for (auto i = nums.begin(); i != nums.end(); ++i) {
+            *i = *i * *i;
+        }
+        int l = 0;
+        for (; l != nums.size(); ++l) {
+        int r = l;
+        for (int i = l + 1; i < nums.size(); ++i) {
+            if (nums[i] < nums[r])
+                r = i;
+        }
+        int temp = nums[l];
+        nums[l] = nums[r];
+        nums[r] = temp;
+        }
+        return nums;
+    }
+};
+
 int main() {
     kun();
     return 0;
